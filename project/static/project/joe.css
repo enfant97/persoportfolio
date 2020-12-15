@@ -1,0 +1,173 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bvn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 300px;
+}
+
+.zone{
+    color: white;
+    text-align: center;
+}
+
+.menu{
+    max-width: 80%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.active{
+    background: rgba(125, 125, 125, 0.62);
+    border-radius: 10px;
+}
+
+.menu li{
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.menu li a{
+    color: white;
+    position:sticky;
+}
+
+nav{
+
+}
+
+header{
+    background: url("3.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.service{
+    margin-bottom: 100px;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ser{
+    margin: 5px;
+    padding-top: 10px;
+    width: 200px;
+    height: 300px;
+    color: rgba(44, 44, 44, 0.86);
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    background-color: rgba(188, 188, 188, 0.22);
+    text-align: center;
+}
+
+.ser p{
+    padding: 3px;
+}
+
+.description{
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+
+.tit{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    max-width: 23%;
+    margin: auto auto 20px;
+}
+
+.prj{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    margin-left: auto;
+}
+
+.proj{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 1px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    margin-left: auto;
+}
+
+.ima{
+    height: 250px;
+    width: 250px;
+}
+
+.pad{
+    padding-bottom: 10px;
+}
+
+.imag{
+    height: 300px;
+    width: 275px;
+    background-size: cover;
+    background: gray ;
+}
+
+.tex{
+    display: flex;
+    font-size: small;
+    justify-content: center;
+    justify-items: center;
+}
+
+footer{
+    background-color: #060606;
+    margin-top: 50px;
+    color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pro{
+    text-align: center;
+    justify-self: center;
+    padding: 5px;
+    margin: 15px;
+}
+
+.pro h4{
+    padding-bottom: 2px;
+    font-size: 15px;
+}
+
+.pro p{
+    font-size: 12px;
+}

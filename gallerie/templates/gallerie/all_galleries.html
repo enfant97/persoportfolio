@@ -1,0 +1,56 @@
+{% load static %}
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static "project/joe.css" %}">
+    <title>{% block title %}GALLERIE{% endblock %}</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li ><a href="{% url 'home' %}">HOME</a></li>
+            <li class="active"><a href="{% url 'gallerie:all_galleries' %}">GALLERIE</a></li>
+        </ul>
+    </nav>
+    <div class="bvn">
+        <h1>BIENVENUE</h1>
+    </div>
+    <div class="zone">
+        <p>dans la zone</p>
+    </div>
+</header>
+<div class="proj">
+    {% for gallerie in galleries %}
+    <div>
+        <img src="{{ gallerie.image.url }}" class="imag" alt="gallerie-images">
+        <h2 class="tex">{{ gallerie.titre }}</h2>
+        <p class="tex pad">{{ gallerie.date }}</p>
+    </div>
+{% endfor %}
+</div>
+</body>
+<footer>
+    <div class="info">
+        <div class="pro">
+            <h4>bassanejoseph@gmail.com</h4>
+            <p>+228 92602849</p>
+        </div>
+        <div class="pro">
+            <h4>DESIGN by</h4>
+            <p>@warriorgraphic</p>
+        </div>
+        <div class="pro">
+            <h4>TOUT DROIT RESERVE</h4>
+            <p>copyright 2020</p>
+        </div>
+    </div>
+</footer>
+</html>
+
+
